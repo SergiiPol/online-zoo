@@ -53,6 +53,9 @@ header .header_content nav .menu a{
 header .header_content nav .menu p a.active{
     color: orange;
 }
+header .header_content nav .menu p a:hover{
+    color: orange;
+}
 header .header_content nav .menu p a{
     text-decoration: none;
 }
@@ -69,6 +72,24 @@ header .header_content .disigned_by{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.4px;
+}
+header .header_content .disigned_by a{
+    text-decoration: none;
+    display: grid;
+    width: 105px;
+    height: 22px;
+    align-self: center;
+    align-items: center;
+    justify-self: end;
+    justify-content: end;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+header .header_content .disigned_by a:hover{
+    color: orange;
 }
 section1{
     display: grid;
@@ -141,11 +162,18 @@ section1 .block1 content .conteiner .button{
     color: #FFFFFF;
     margin-top: 626px;
     margin-left: 80px;
-    background-image: linear-gradient(to left,#FE9013 ,#F9804B);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
+}
+section1 .block1 content .conteiner .button:hover{
+    background: #E47209;
+}
+section1 .block1 content .conteiner .button:active{
+    background: #4B9200;
 }
 section2{
     display: grid;
@@ -283,6 +311,12 @@ section2 .block2 .wrapper_cards .button_right img{
     align-self: center;
     justify-self:center ;
 }
+section2 .block2 .wrapper_cards .button_right:active{
+    background:  #4B9200;
+}
+section2 .block2 .wrapper_cards .button_left:active{
+    background:  #4B9200;
+}
 section2 .block2 .wrapper_cards .slider_cards .cont_cards{
     display: grid;
     width: 1158px;
@@ -306,6 +340,9 @@ section2 .block2 .wrapper_cards .slider_cards .cont_cards .card{
     grid-template-areas: 
     "foto_animals",
     "discription";
+}
+section2 .block2 .wrapper_cards .slider_cards .cont_cards .card:hover{
+    transform: scale(1.1);
 }
 section2 .block2 .wrapper_cards .slider_cards .cont_cards .card img{
     display: grid;
@@ -389,6 +426,17 @@ section2 .block2 .button_block2{
     justify-content: center;
     align-content: center;
     margin-top: 80px;
+    z-index: 4;
+}
+section2 .block2 .button_block2 a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+section2 .block2 .button_block2:hover{
+    background: #E47209;
+}
+section2 .block2 .button_block2:active{
+    background: #4B9200;
 }
 section3{
     display: grid;
@@ -465,7 +513,7 @@ section3 .block3 .content_text3 .cont_tx .p1{
     justify-content: flex-start;
     letter-spacing: 0.1px;
 }
-section3 .block3 .content_text3 .cont_tx .p2{
+section3 .block3 .content_text3 .cont_tx .p2 {
     display: grid;
     width: 863px;
     height: 42px;
@@ -474,7 +522,15 @@ section3 .block3 .content_text3 .cont_tx .p2{
     font-size: 16px;
     line-height: 20.8px;
     justify-content: flex-start;
+    color: #333B41;
     margin-top: 10px;
+}
+section3 .block3 .content_text3 .cont_tx .p2 a{
+    margin-left: 3px;
+    color:#333B41;
+}
+section3 .block3 .content_text3 .cont_tx .p2 a:hover{
+    color:#E47209;
 }
 section3 .block3 .content3 .content_pay{
     display: grid;
@@ -547,6 +603,13 @@ section3 .block3 .content3 .button_pay{
     justify-content: center;
     align-content: center;
     margin-top: 70px;
+    cursor: pointer;
+}
+section3 .block3 .content3 .button_pay:hover{
+    background-color: #E47209;
+}
+section3 .block3 .content3 .button_pay:active{
+     background: #4B9200;
 }
 section4{
     display: grid;
@@ -742,6 +805,12 @@ section4 .block4 .button_block4{
     line-height: 22.4px;
     color: #FFFFFF;
 }
+section4 .block4 .button_block4:hover{
+    background:#E47209;
+}
+section4 .block4 .button_block4:active{
+    background: #4B9200;
+}
 section4 .div_leav_foto{
     display: grid;
     position:absolute;
@@ -825,6 +894,12 @@ section5 .block5 .footer_header .subscribe .subscribe_input .input{
     background-color: #111115;
     padding-left: 10px;
 }
+section5 .block5 .footer_header .subscribe .subscribe_input input:active{
+    border: 0.7px solid  #4B9200;
+}
+section5 .block5 .footer_header .subscribe .subscribe_input input::grammar-error{
+    border: 0.7px solid  #e62929;
+}
 section5 .block5 .footer_header .subscribe button{
     display: grid;
     grid-area: btn;
@@ -840,6 +915,9 @@ section5 .block5 .footer_header .subscribe button{
     color: #4B9200;
     margin-left: 10px;
     cursor: pointer;
+}
+section5 .block5 .footer_header .subscribe button:active{
+    background-color: #c5f595;
 }
 section5 .block5 .footer_donate{
     display: grid;
@@ -860,6 +938,16 @@ section5 .block5 .footer_donate .btn_donate{
     color: #FFFFFF;
     justify-content: center;
     align-content: center;
+}
+section5 .block5 .footer_donate .btn_donate a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+section5 .block5 .footer_donate .btn_donate:hover{
+    background: #E47209;
+}
+section5 .block5 .footer_donate .btn_donate:active{
+    background: #4B9200;
 }
 section5 .block5 .footer_icons_nav_disigned{
     display: grid;
@@ -887,6 +975,8 @@ section5 .block5 .footer_icons_nav_disigned .footer_icons .ic{
     color:#FFFFFF;
     justify-content: center;
     align-content: center;
+}section5 .block5 .footer_icons_nav_disigned .footer_icons .ic:active{
+    background:#4B9200;
 }
 section5 .block5 .footer_icons_nav_disigned .footer_icons .n{
     display: grid;
@@ -897,6 +987,9 @@ section5 .block5 .footer_icons_nav_disigned .footer_icons .n{
     color: #FFFFFF; 
     justify-content: flex-start;
     align-content: center;  
+}
+section5 .block5 .footer_icons_nav_disigned .footer_icons .n:active{
+    color: #4B9200;
 }
 section5 .block5 .footer_icons_nav_disigned .footer_nav{
     display: grid;
@@ -923,8 +1016,11 @@ section5 .block5 .footer_icons_nav_disigned .footer_nav nav .menu_footer p{
     white-space: nowrap;
     gap: 58px;
 }
+section5 .block5 .footer_icons_nav_disigned .footer_nav nav .menu_footer p a:hover{
+    color: #E47209;
+}
 section5 .block5 .footer_icons_nav_disigned .footer_nav nav .menu_footer p a.active{
-    color: orange;
+    color: #E47209;
 }
 section5 .block5 .footer_icons_nav_disigned .footer_nav nav .menu_footer p a{
     text-decoration: none;
@@ -945,4 +1041,8 @@ section5 .block5 .footer_icons_nav_disigned .disigned{
     color: #FFFFFF;
     opacity: 0.6;
     white-space: nowrap;
+}
+section5 .block5 .footer_icons_nav_disigned .disigned:active{
+    color: #4B9200;
+    text-decoration: underline;
 }

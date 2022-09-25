@@ -51,10 +51,13 @@ header .header_content nav .menu a{
     white-space: nowrap;
 }
 header .header_content nav .menu p a.active{
-    color: orange;
+    color:#F9804B;
 }
 header .header_content nav .menu p a{
     text-decoration: none;
+}
+header .header_content nav .menu p a:hover{
+    color: #F9804B;
 }
 header .header_content .disigned_by{
     display: grid;
@@ -69,6 +72,13 @@ header .header_content .disigned_by{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.4px;
+}
+header .header_content .disigned_by a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header .header_content .disigned_by a:hover{
+    color: #F9804B;
 }
 section1{
     display: grid;
@@ -431,6 +441,12 @@ section2 .block2 .block_donation .btn_donate{
     color: #FFFFFF;
     margin-top: 33px;
 }
+section2 .block2 .block_donation .btn_donate:hover{
+    background: #E47209;
+}
+section2 .block2 .block_donation .btn_donate:active{
+    background:#4B9200;
+}
 section2 .block2 .block_donation .finish_text{
     font-family: 'Roboto';
     font-style: normal;
@@ -441,12 +457,6 @@ section2 .block2 .block_donation .finish_text{
     justify-self: center;
     margin-top: 30px;
 }
-
-
-
-
-
-
 section3{
     display: grid;
     width: 100%;
@@ -459,7 +469,6 @@ section3 .block3{
     width: 1160px;
     height: 443px;
     grid-template-rows: 165px 55px 1fr;
-
 }
 section3 .block3 .footer_header{
     display: grid;
@@ -536,6 +545,9 @@ section3 .block3 .footer_header .subscribe button{
     margin-left: 10px;
     cursor: pointer;
 }
+section3 .block3 .footer_header .subscribe button:active{
+    background: #d9f6e8;;
+}
 section3 .block3 .footer_donate{
     display: grid;
     height: 55px;
@@ -555,6 +567,12 @@ section3 .block3 .footer_donate .btn_donate{
     color: #FFFFFF;
     justify-content: center;
     align-content: center;
+}
+section3 .block3 .footer_donate .btn_donate:hover{
+    background: #E47209;
+}
+section3 .block3 .footer_donate .btn_donate:active{
+    background: #4B9200;
 }
 section3 .block3 .footer_icons_nav_disigned{
     display: grid;
@@ -583,6 +601,9 @@ section3 .block3 .footer_icons_nav_disigned .footer_icons .ic{
     justify-content: center;
     align-content: center;
 }
+section3 .block3 .footer_icons_nav_disigned .footer_icons .ic:active{
+    color: #4B9200;
+}
 section3 .block3 .footer_icons_nav_disigned .footer_icons .n{
     display: grid;
     font-family: 'Roboto', sans-serif;
@@ -592,6 +613,9 @@ section3 .block3 .footer_icons_nav_disigned .footer_icons .n{
     color: #FFFFFF; 
     justify-content: flex-start;
     align-content: center;  
+}
+section3 .block3 .footer_icons_nav_disigned .footer_icons .n:active{
+    color: #4B9200;
 }
 section3 .block3 .footer_icons_nav_disigned .footer_nav{
     display: grid;
@@ -625,6 +649,9 @@ section3 .block3 .footer_icons_nav_disigned .footer_nav nav .menu_footer p a{
     text-decoration: none;
     color: #FFFFFF;
 }
+section3 .block3 .footer_icons_nav_disigned .footer_nav nav .menu_footer p a:hover{
+    color: #E47209;
+}
 section3 .block3 .footer_icons_nav_disigned .disigned{
     display: grid;
     width: 230px;
@@ -639,4 +666,8 @@ section3 .block3 .footer_icons_nav_disigned .disigned{
     color: #FFFFFF;
     opacity: 0.6;
     white-space: nowrap;
+}
+section3 .block3 .footer_icons_nav_disigned .disigned:hover{
+    color: #4B9200;
+    text-decoration: underline;
 }
