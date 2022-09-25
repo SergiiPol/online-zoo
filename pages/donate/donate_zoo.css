@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: grid;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    justify-self: center;
+    z-index: 100;
+}
+header .header_content{
+    display: grid;
+    width: 1160px;
+    justify-content: center;
+    grid-template-columns: 145px 1fr 435px 1fr;
+}
+header .header_content .logo{
+    display: grid;
+    width: 82px;
+    height: 52px;
+    justify-self: flex-start;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+    border:1px solid #FFFFFF;
+    border-radius: 2px;
+}
+header .header_content nav{
+    display: grid;
+    align-self: center;
+}
+header .header_content nav .menu{
+    display: grid;
+    height: 22px;
+    grid-template-columns: repeat(5, auto);
+    justify-items:start;
+    align-items: center;
+    align-self: center;
+    gap: 58px;
+}
+header .header_content nav .menu a{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+header .header_content nav .menu p a.active{
+    color: orange;
+}
+header .header_content nav .menu p a{
+    text-decoration: none;
+}
+header .header_content .disigned_by{
+    display: grid;
+    width: 105px;
+    height: 22px;
+    align-self: center;
+    align-items: center;
+    justify-self: end;
+    justify-content: end;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+section1{
+    display: grid;
+    width: 100%;
+    height: 386px;
+    background-image:url(../../assets/images/panda_donate.png);
+    background-size: 100% 100%;
+    justify-content: center;
+}
+section2{
+    display: grid;
+    width: 100%;
+    height: 1482px;
+    justify-content: center;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+section2 .block2{
+    display: grid;
+    width: 1160px;
+    height: 1482px;
+    grid-template-rows: 188px 87px 1024px 1fr;
+}
+section2 .block2 .block2_title{
+    width: 1160px;
+    height: 200px;
+}
+section2 .block2 .block2_title h3{
+    display: grid;
+    height: 47px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 36px; 
+    line-height: 46.8px;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+section2 .block2 .block2_title .block2_text{
+    display: grid;
+    height: 84px;
+}
+section2 .block2 .block2_title .block2_text p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    letter-spacing: 0.1px;
+    margin-top: 10px;
+}
+section2 .block2 .h3{
+    display: grid;
+    width: 341px;
+    height: 47px;
+    align-self: flex-start;
+}
+section2 .block2 .h3 h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FE9013;
+    align-self: flex-start;
+    margin-top: 40px;
+}
+section2 .block2 .block_donation{
+    display: grid;
+    width: 1160px;
+    height: 964px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.52);
+    margin-top: 60px;
+    grid-template-rows: 150px 305px 152px 110px 45px 87px 1fr;
+}
+section2 .block2 .block_donation .title_donation{
+    display: grid;
+    width: 100%;
+    height: 107px;
+    justify-self: flex-start;
+    margin-top: 43px;
+}
+section2 .block2 .block_donation .title_donation h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color:#FE9013;
+    margin-left: 342px;
+}
+section2 .block2 .block_donation .title_donation p{
+    display: grid;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+    margin-top: 20px;
+    margin-left: 92px;
+}
+section2 .block2 .block_donation .diet_dias_animals{
+    display: grid;
+    width: 100%;
+    height: 334px;
+    grid-template-columns: 466px 14px 1fr;
+}
+section2 .block2 .block_donation .diet_dias_animals .counter_day{
+    display: grid;
+    width: 159px;
+    height: 74px;
+    justify-items: center;
+    margin-top: 165px;
+    margin-left: 307px;
+}
+section2 .block2 .block_donation .diet_dias_animals .counter_day .num_day{
+    display: grid;
+    width: 41px;
+    height: 58px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    color: #000000;
+}
+section2 .block2 .block_donation .diet_dias_animals .counter_day .diet_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    margin-top: 11px;
+}
+section2 .block2 .block_donation .diet_dias_animals .symbol_multi{
+    margin-top: 190px;
+    margin-left: 11px;
+}
+section2 .block2 .block_donation .diet_dias_animals .img_animal{
+    margin-left: 70px;
+    margin-top: 107px;
+}
+section2 .block2 .block_donation .amount{
+    width: 976px;
+    height: 114px;
+    justify-self: center;
+    align-self: flex-start;
+    grid-template-rows: 22px 1fr 36px;
+}
+section2 .block2 .block_donation .amount .h5{
+    width: 57px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    margin-top: 48.5px;
+}
+section2 .block2 .block_donation .amount .wrapper_range{
+    display: grid;
+    position: relative;
+    width: 976px;
+    height: 27px;
+    border-radius: 2px;
+    background: #404950;
+    justify-self: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 17px;
+}
+section2 .block2 .block_donation .amount .wrapper_range .wrapper_circle{
+    display: grid;
+    position: absolute;
+    width: 865px;
+    height: 27px;
+    border-radius: 2px;
+    justify-self: stretch;
+    align-self: center;
+    grid-template-columns: repeat(8, 1fr);
+    gap:120px;
+    margin-left: 25px;
+}
+section2 .block2 .block_donation .amount .wrapper_range .circle_renge{
+    display:grid;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #FFEE2E;
+    align-self: center;
+    z-index: 2;
+    justify-self: flex-end;
+}
+section2 .block2 .block_donation .amount input.input_range{
+    -webkit-appearance: none;
+    position: absolute;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background: #72828E;
+    background-size:100%;
+    background-repeat: no-repeat;
+    display: grid;
+    transform: rotate(180deg);
+    justify-self:center;
+    align-self: center;
+    width: 915px;
+}
+section2 .block2 .block_donation .amount input.input_range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #FFEE2E;
+    cursor:ew-resize;
+    transition: background .3s ease-in-out;
+}
+
+section2 .block2 .block_donation .amount .count_money{
+    display: grid;
+    width: 965px;
+    grid-template-columns: repeat(8, 73px);
+    justify-content: space-between;
+    margin-top: 12px;
+}
+section2 .block2 .block_donation .amount .count_money .count{
+    display: grid;
+    height: 20px;
+    grid-template-columns: 13px 1fr;
+    justify-self: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+}
+section2 .block2 .block_donation .amount .count_money .count .symbol_money{
+    display: grid;
+    width: 10px;
+    height: 20px;
+    color: #333B41;
+    margin-top: 9px;
+    font-size: 20px;
+}
+section2 .block2 .block_donation .amount .count_money .count .money{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+    margin-left: 2px;
+}
+section2 .block2 .block_donation .amount .count_money .count .symbol_money.active{
+    color:#FE9013;
+}
+section2 .block2 .block_donation .amount .count_money .count .money.active{
+    color:#FE9013;
+}
+section2 .block2 .block_donation .another_amount{
+    display: grid;
+    width: 268px;
+    height: 54px;
+    border-radius: 2px;
+    border: 1px solid #929699;
+    justify-self: center;
+    background: rgba(255, 255, 255, 0.52);
+    margin-top: 55px;
+}
+section2 .block2 .block_donation .another_amount input{
+    display: grid;
+    position: relative;
+    background: rgba(255, 255, 255, 0.52);
+    padding: 9px;
+    border-radius: 2px;
+}
+section2 .block2 .block_donation .another_amount .icon{
+    position: absolute;
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 13px;
+    font-size: 20px;
+    color: #929699;
+}
+section2 .block2 .block_donation .choice{
+    display: grid;
+    height: 16px;
+    width: 197px;
+    justify-self: center;
+    align-self: flex-start;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+}
+section2 .block2 .block_donation .choice .inp1 input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: 0.2s all linear;
+    outline: none;
+    position: relative;
+    top: 4px;
+    margin-left: -5px;
+    align-self: center;
+    border: 1px solid #FE9013;
+}
+section2 .block2 .block_donation .choice .inp2 input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-left: 25px;
+    position: relative;
+    top: 4px;
+    align-self: center;
+    justify-items: flex-end;
+    border: 1px solid #FE9013;
+}
+section2 .block2 .block_donation .choice .inp2 input:checked {
+    border: 8px solid #4B9200;
+  }
+  section2 .block2 .block_donation .choice .inp1 input:checked {
+    border: 8px solid #4B9200;
+  }
+section2 .block2 .block_donation .choice label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 10px;
+    align-self: center;
+}
+section2 .block2 .block_donation .btn_donate{
+    display: grid;
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 33px;
+}
+section2 .block2 .block_donation .finish_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    justify-self: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+section3{
+    display: grid;
+    width: 100%;
+    height: 443px;
+    justify-content: center;
+    background-color: #111115;
+}
+section3 .block3{
+    display: grid;
+    width: 1160px;
+    height: 443px;
+    grid-template-rows: 165px 55px 1fr;
+
+}
+section3 .block3 .footer_header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section3 .block3 .footer_header .footer_logo{
+    display: grid;
+    width: 82px;
+    height: 52px;
+    border-radius: 2px;
+    border: 0.5px solid #FFFFFF;
+    justify-content: center;
+    align-content: center;
+    margin-top: 41px;
+}
+section3 .block3 .footer_header .subscribe{
+    display: grid;
+    justify-self: end;
+    grid-template-rows: 69px 1fr;
+    grid-template-areas: 
+    "title"
+    "input";
+}
+section3 .block3 .footer_header .subscribe .subscribe_title{
+    display: grid;
+    grid-area: title;
+    width: 237px;
+    height: 29px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px; 
+    line-height: 28.8pxpx;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+section3 .block3 .footer_header .subscribe .subscribe_input{
+    display: grid;
+    grid-area: input;
+    align-items: flex-start;
+    grid-template-areas: 
+    "inp btn";
+    margin-top: 14px;
+}
+section3 .block3 .footer_header .subscribe .subscribe_input .input{
+    display: grid;
+    grid-area: inp;
+    width: 218px;
+    height: 42px;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+    border: 0.7px solid #F9804B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 22.4px;
+    color: #BDBDBD;
+    background-color: #111115;
+    padding-left: 10px;
+}
+section3 .block3 .footer_header .subscribe button{
+    display: grid;
+    grid-area: btn;
+    width: 129px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #333B41;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 22.4pxpx;
+    color: #000000;
+    margin-left: 10px;
+    cursor: pointer;
+}
+section3 .block3 .footer_donate{
+    display: grid;
+    height: 55px;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+section3 .block3 .footer_donate .btn_donate{
+    display: grid;
+    width: 298px;
+    height: 54px;
+    border-radius: 5px;
+    background-image: linear-gradient(#F9804B 0%, #FE9013 100%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 22.4px;
+    color: #FFFFFF;
+    justify-content: center;
+    align-content: center;
+}
+section3 .block3 .footer_icons_nav_disigned{
+    display: grid;
+    grid-template-columns: 1fr 490px 1fr;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_icons{
+    display: grid;
+    width: 115px;
+    height: 140px;
+    justify-self: flex-start;
+    align-self: center;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_icons .icons_f{
+    display: grid;
+    width: 115px;
+    height: 35px;
+    grid-template-columns: 38px 1fr;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_icons .ic{
+    display: grid;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    color:#FFFFFF ;
+    justify-content: center;
+    align-content: center;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_icons .n{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 22.4px;
+    color: #FFFFFF; 
+    justify-content: flex-start;
+    align-content: center;  
+}
+section3 .block3 .footer_icons_nav_disigned .footer_nav{
+    display: grid;
+    align-self: center;
+    margin-bottom: 50px;
+    align-self: flex-end;
+    margin-left: 70px;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_nav nav .menu_footer{
+    display: grid;
+    height: 22px;
+    grid-template-columns: repeat(5, auto);
+    justify-items:start;
+    align-items: center;
+    align-self: center;
+    gap: 50px;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_nav nav .menu_footer p{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    gap: 58px;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_nav nav .menu_footer p a.active{
+    color: orange;
+}
+section3 .block3 .footer_icons_nav_disigned .footer_nav nav .menu_footer p a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+section3 .block3 .footer_icons_nav_disigned .disigned{
+    display: grid;
+    width: 230px;
+    height: 52px;
+    justify-self: flex-end;
+    justify-items: flex-start;
+    margin-top: 126px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20.8px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    white-space: nowrap;
+}

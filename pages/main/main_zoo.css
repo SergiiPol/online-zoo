@@ -750,6 +750,7 @@ section4 .div_leav_foto{
     align-self: flex-end;
     justify-self: end;
     margin-bottom: -10px;
+    overflow: hidden;
 }
 section5{
     display: grid;
@@ -882,7 +883,7 @@ section5 .block5 .footer_icons_nav_disigned .footer_icons .ic{
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background-color:#C4C4C4;
+    background: rgba(196, 196, 196, 0.5);
     color:#FFFFFF;
     justify-content: center;
     align-content: center;
